@@ -8,7 +8,8 @@ A comprehensive solution for inline styles
 
 * Support for pseudo selectors and media queries
   * Automatic generation of scoped CSS, hashed class names
-  * Automatic injection of scoped CSS into <head> with buffering and caching
+  * Automatic injection of scoped CSS into document `<head>` with buffering and caching
+  * Support for extraction of CSS on server
 * Plain, valid inline styles are passed through
 
 ### Roadmap
