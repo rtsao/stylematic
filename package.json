@@ -1,6 +1,6 @@
 {
   "name": "stylematic",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A comprehensive solution for inline styles",
   "author": "Ryan Tsao <ryan.j.tsao@gmail.com>",
   "main": "index.js",
