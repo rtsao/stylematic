@@ -13,7 +13,7 @@
   "dependencies": {
     "epistyle": "^1.0.0",
     "styletron": "^0.2.1",
-    "inline-style-prefix-all": "https://github.com/rtsao/inline-style-prefix-all/tarball/array-value-fallback"
+    "@rtsao/inline-style-prefix-all": "^1.0.5"
   },
   "devDependencies": {
     "tape": "^4.5.1"
