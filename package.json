@@ -11,8 +11,9 @@
     "test": "node test/index.js"
   },
   "dependencies": {
-    "epistyle": "^0.4.0",
-    "styletron": "^0.2.1"
+    "epistyle": "^1.0.0",
+    "styletron": "^0.2.1",
+    "inline-style-prefix-all": "https://github.com/rtsao/inline-style-prefix-all/tarball/array-value-fallback"
   },
   "devDependencies": {
     "tape": "^4.5.1"
