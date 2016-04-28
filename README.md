@@ -6,18 +6,24 @@
 
 A comprehensive solution for inline styles
 
-* Automatic vendor prefixing
-* Support for value fallbacks
-* Support for pseudo selectors and media queries
-  * Automatic generation of scoped CSS, hashed class names
-  * Automatic injection of scoped CSS into document `<head>` with buffering and caching
-  * Support for extraction of CSS on server
-* Plain, valid inline styles are passed through
+#### Features
+* Automatic vendor prefixing <sup>1</sup>
+* Support for value fallbacks <sup>2</sup>
+* Support for pseudo selectors and media queries <sup>2</sup>
+* Automatic generation of scoped CSS, hashed class names <sup>2</sup>
+* Automatic injection of scoped CSS into document `<head>` with buffering and caching <sup>3</sup>
+* Support for extraction of CSS on server for server-rendering <sup>4</sup>
+* Lightweight, only [~5KB bundled, minified, and gzipped](https://wzrd.in/standalone/stylematic@latest)
 
-This is a user-friendly glue module powered by the following single-responsibility modules:
-* https://github.com/rofrischmann/inline-style-prefix-all
-* https://github.com/rtsao/epistyle
-* https://github.com/rtsao/styletron
+<hr>
+
+[1]: powered by [inline-style-prefix-all](https://github.com/rofrischmann/inline-style-prefix-all)
+
+[2]: powered by [epistyle](https://github.com/rtsao/epistyle)
+
+[3]: powered by [styletron](https://github.com/rtsao/styletron)
+
+[4]: powered by [styletron-server](https://github.com/rtsao/styletron-server)
 
 [build-badge]: https://travis-ci.org/rtsao/stylematic.svg?branch=master
 [build-href]: https://travis-ci.org/rtsao/stylematic
