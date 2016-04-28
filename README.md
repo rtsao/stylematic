@@ -14,6 +14,11 @@ A comprehensive solution for inline styles
   * Support for extraction of CSS on server
 * Plain, valid inline styles are passed through
 
+This is a user-friendly glue module powered by the following single-responsibility modules:
+* https://github.com/rofrischmann/inline-style-prefix-all
+* https://github.com/rtsao/epistyle
+* https://github.com/rtsao/styletron
+
 [build-badge]: https://travis-ci.org/rtsao/stylematic.svg?branch=master
 [build-href]: https://travis-ci.org/rtsao/stylematic
 [deps-badge]: https://david-dm.org/rtsao/stylematic.svg
