@@ -1,7 +1,7 @@
 'use strict';
 
 var epistyle = require('epistyle/passthrough');
-var prefix = require('@rtsao/inline-style-prefix-all');
+var prefix = require('inline-style-prefix-all');
 var styletron = require('styletron');
 
 module.exports = stylematic;
