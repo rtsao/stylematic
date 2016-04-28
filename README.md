@@ -15,15 +15,49 @@ A comprehensive solution for inline styles
 * Support for extraction of CSS on server for server-rendering <sup>4</sup>
 * Lightweight, only [~5KB bundled, minified, and gzipped](https://wzrd.in/standalone/stylematic@latest)
 
-<hr>
+<hr />
 
-[1]: powered by [inline-style-prefix-all](https://github.com/rofrischmann/inline-style-prefix-all)
+1. [inline-style-prefix-all](https://github.com/rofrischmann/inline-style-prefix-all)
+2. [epistyle](https://github.com/rtsao/epistyle)
+3. [styletron](https://github.com/rtsao/styletron)
+4. [styletron-server](https://github.com/rtsao/styletron-server)
 
-[2]: powered by [epistyle](https://github.com/rtsao/epistyle)
+<hr />
 
-[3]: powered by [styletron](https://github.com/rtsao/styletron)
 
-[4]: powered by [styletron-server](https://github.com/rtsao/styletron-server)
+## Quick example
+
+```js
+const stylematic = require('stylematic');
+
+const {passthrough, className, css} = stylematic({
+  color: 'red',
+  background: 'linear-gradient(#fff, #eee)',
+  ':hover': {
+    color: ['rgba(0,75,255,0.8)', 'blue']
+  }
+});
+
+console.log(passthrough);
+// => {color: 'red'}
+
+console.log(className);
+// => '_style_4e1hWd'
+
+console.log(css);
+/**
+._style_4e1hWd {
+  background: -webkit-linear-gradient(#fff, #eee) !important;
+  background: -moz-linear-gradient(#fff, #eee) !important;
+  background: linear-gradient(#fff, #eee) !important
+}
+._style_4e1hWd:hover {
+  color: blue !important;
+  color: rgba(0,75,255,0.8) !important
+}
+*/
+
+```
 
 [build-badge]: https://travis-ci.org/rtsao/stylematic.svg?branch=master
 [build-href]: https://travis-ci.org/rtsao/stylematic
