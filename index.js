@@ -11,7 +11,7 @@ function stylematic(styles) {
   var scoped = epistyle(prefixed);
 
   if (scoped.css) {
-    styletron.injectOnce(scoped.className, scoped.css);
+    styletron.injectOnce(scoped.css, scoped.className);
   }
 
   return {
