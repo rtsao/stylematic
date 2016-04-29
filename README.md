@@ -30,7 +30,7 @@ A comprehensive solution for inline styles
 ```js
 const stylematic = require('stylematic');
 
-const {passthrough, className, css} = stylematic({
+const {passthrough, className} = stylematic({
   color: 'red',
   background: 'linear-gradient(#fff, #eee)',
   ':hover': {
@@ -43,9 +43,11 @@ console.log(passthrough);
 
 console.log(className);
 // => '_style_4e1hWd'
+```
 
-console.log(css);
-/**
+**Automatically injected into document `<head>`**
+```html
+<style data-styletron>
 ._style_4e1hWd {
   background: -webkit-linear-gradient(#fff, #eee) !important;
   background: -moz-linear-gradient(#fff, #eee) !important;
@@ -55,8 +57,7 @@ console.log(css);
   color: blue !important;
   color: rgba(0,75,255,0.8) !important
 }
-*/
-
+</style>
 ```
 
 [build-badge]: https://travis-ci.org/rtsao/stylematic.svg?branch=master
