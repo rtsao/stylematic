@@ -23,10 +23,10 @@ test('passthrough styles', function(t) {
 test('prefix fallback test', function(t) {
   styletron.startBuffering();
   var result = stylematic({width: ['calc(50%)', '90%']});
-  var expectedCss = '._style_3H0rMf {\n  width: -webkit-calc(50%) !important;\n  width: -moz-calc(50%) !important;\n  width: calc(50%) !important;\n  width: 90% !important\n}';
+  var expectedCss = '._style_11gXeH {\n  width: 90% !important;\n  width: -webkit-calc(50%) !important;\n  width: -moz-calc(50%) !important;\n  width: calc(50%) !important\n}';
   t.equal(result.css, expectedCss);
   t.equal(styletron.flushBuffer(), expectedCss);
-  t.equal(result.className, '_style_3H0rMf');
+  t.equal(result.className, '_style_11gXeH');
   t.end();
 });
 

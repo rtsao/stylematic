@@ -7,7 +7,7 @@ var styletron = require('styletron');
 module.exports = stylematic;
 
 function stylematic(styles) {
-  var prefixed = reverseArrays(prefix(styles));
+  var prefixed = reverseArrays(prefix(reverseArrays(styles)));
   var scoped = epistyle(prefixed);
 
   if (scoped.css) {
