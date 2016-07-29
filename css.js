@@ -1,6 +1,6 @@
 'use strict';
 
-var epistyle = require('epistyle/passthrough');
+var epistyle = require('epistyle');
 var prefix = require('@rtsao/inline-style-prefix-all');
 var styletron = require('styletron');
 var reverseArrays = require('./reverse');
@@ -16,10 +16,7 @@ function stylematic(styles) {
   }
 
   return {
-    passthrough: scoped.passthrough,
     className: scoped.css && scoped.className,
     css: scoped.css
   };
 }
-
-
