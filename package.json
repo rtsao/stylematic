@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "epistyle": "^1.0.0",
-    "styletron": "^1.0.0",
+    "styletron": "^1.0.2",
     "@rtsao/inline-style-prefix-all": "^2.0.0"
   },
   "devDependencies": {
