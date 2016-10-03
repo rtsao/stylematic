@@ -2,7 +2,7 @@
 
 var epistyle = require('epistyle');
 var prefix = require('@rtsao/inline-style-prefix-all');
-var styletron = require('styletron');
+var styletron = require('styletron-legacy');
 var reverseArrays = require('./reverse');
 
 module.exports = stylematic;
