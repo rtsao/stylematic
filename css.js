@@ -1,7 +1,7 @@
 'use strict';
 
 var epistyle = require('epistyle');
-var prefix = require('@rtsao/inline-style-prefix-all');
+var prefix = require('inline-style-prefixer/static');
 var styletron = require('styletron-legacy');
 var reverseArrays = require('./reverse');
 

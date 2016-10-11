@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "epistyle": "^1.0.0",
-    "styletron-legacy": "^2.0.0-beta.3",
-    "@rtsao/inline-style-prefix-all": "^2.0.0"
+    "inline-style-prefixer": "^2.0.4",
+    "styletron-legacy": "^2.0.0-beta.3"
   },
   "devDependencies": {
     "tape": "^4.5.1"
